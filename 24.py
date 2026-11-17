@@ -45,3 +45,5 @@ def shipping_cost(weight : int) -> int:
         return 10
     else: 
         return 20
+def test_shipping_cost() -> None:
+    assert shipping_cost(13) == pytest.approx(20)
